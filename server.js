@@ -19,7 +19,7 @@ const app=express()
 app.use(express.json())
 //midleware 
 app.use(cors({
-    origin:["http://localhost:3000",""]
+    origin:["http://localhost:3000","https://frontend1-0ah7.onrender.com"]
 }))
 app.use('/api/products',productRoutes)
 app.use('/api/users',userRoutes)
